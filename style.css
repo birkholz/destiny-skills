@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: -webkit-radial-gradient(circle, #9EA792, #223539);
+	color: white;
+	position: relative;
+	padding-top: 40px;
+	font-family: sans-serif;
+}
+.float-left {
+	display: block;
+	float: left;
+}
+#wrapper {
+	width: 990px;
+	position: absolute;
+	left: 50%;
+	margin-left: -495px;
+}
+#class-list {
+	text-align: center;
+	font-size: 24px;
+}
+#class-list span {
+	margin: 0 0 10px;
+	padding: 0 10px 0 10px;
+	border-left: 1px solid rgba(255,255,255,0.4);
+	cursor: pointer;
+}
+#class-list span:hover {
+	text-decoration: underline;
+}
+#class-list span:first-child {
+	border: none;
+}
+#class {
+	/*margin-top: -10px;*/
+	margin-left: 10px;
+}
+#class-desc {
+	clear: both;
+	display: block;
+	padding-top: 20px;
+	color: rgba(255,255,255,0.7);
+}
+h1 {
+	font-size: 2.4em;
+}
+h2 {
+	line-height: 1em;
+	font-weight: normal;
+	font-size: 1.3em;
+	color: rgba(255,255,255,0.7);
+}
+#stats {
+	width: 875px;
+	border-top:  3px solid rgba(255,255,255,0.4);
+	border-bottom:  3px solid rgba(255,255,255,0.4);
+	padding: 10px 0;
+	margin: 30px 0 10px;
+	font-size: 20px;
+	color: rgba(255,255,255,0.8);
+	font-weight: bold;
+}
+#stats span {
+	width: 100px;
+	display: inline-block;
+	text-align: right;
+}
+#stats > div {
+	margin: 4px 0;
+}
+#stats .bar {
+	display: inline-block;
+	width: 200px;
+	height: 20px;
+	margin-bottom: -3px;
+	background: rgba(255,255,255,0.1);
+	max-width: 200px;
+	overflow: hidden;
+	white-space:nowrap;
+}
+#stats .bar .fill {
+	display:inline-block;
+	height: 20px;
+	width: 0;
+	max-width: 200px;
+	background: rgba(255,255,255, 0.9);
+}
+@-webkit-keyframes moving-gradient {
+    0% { background-position: right bottom; }
+    100% { background-position: left bottom; }
+}
+#stats .bar .add {
+	display: inline-block;
+	height: 20px;
+	width: 0;
+	background: #43904A;
+	margin-left: -6px;
+
+	background: -webkit-linear-gradient(
+        left,
+        #82CB7A 30%,
+        #5BBD55 80%,
+        #82CB7A 100%
+    ) repeat;
+    
+    -webkit-background-size: 200px 100%;
+    -webkit-animation-name: moving-gradient;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+}
+#stats .bar .sub {
+	display: inline-block;
+	height: 20px;
+	width: 0;
+	background: -webkit-linear-gradient(
+        left,
+        #c48383 30%,
+        #c43b3b 80%,
+        #c48383 100%
+    ) repeat;
+
+	-webkit-background-size: 200px 100%;
+    -webkit-animation-name: moving-gradient;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+}
+#sheet {
+
+}
+section {
+	clear: both;
+}
+.skill {
+	width: 88px;
+	height: 88px;
+	background: rgba(255,255,255,0.2);
+	border-radius: 50px;
+	border: 6px solid #43904A;
+	margin: 5px;
+	float: left;
+	overflow: hidden;
+}
+.skill img {
+	width: 100%;
+	height: 100%;
+}
+.skill:not(.empty) {
+	transition: all 0.10s linear;
+	cursor: pointer;
+}
+.skill:not(.active) img {
+	opacity: 0.3;
+}
+.skill:not(.active):hover {
+	-webkit-transform: scale(1.05);
+}
+@keyframes pulse {
+	0% { box-shadow: 0 0 14px rgba(255,255,255,1);}
+	50% { box-shadow: 0 0 14px rgba(255,255,255,0.5);}
+	100% { box-shadow: 0 0 14px rgba(255,255,255,1);}
+}
+@-webkit-keyframes pulse {
+	0% { -webkit-box-shadow: 0 0 14px rgba(255,255,255,1);}
+	50% { -webkit-box-shadow: 0 0 14px rgba(255,255,255,0.5);}
+	100% { -webkit-box-shadow: 0 0 14px rgba(255,255,255,1);}
+}
+.skill:not(.empty).active:hover {
+	-webkit-animation: pulse 3s infinite ease-in-out;
+	animation: pulse 3s infinite ease-in-out;
+}
+.skill.active {
+	background: #43904A;
+}
+.empty {
+	width: 100px;
+	height: 100px;
+	margin: 5px;
+	background: none;
+	border: none;
+}
+#tooltip {
+	width: 400px;
+	background: #1B1D1B;
+	background: rgba(30,30,30,0.95);
+	position: absolute;
+}
+#tooltip h3 {
+	display: block;
+	text-transform: uppercase;
+	font-size: 24px;
+	line-height: 40px;
+	padding: 0 0.6em;
+	background: #0B0C0B;
+	border-top: 3px solid #989D9A;
+}
+#tooltip p {
+	padding: 0.6em;
+	font-size: 18px;
+	color: #AAA;
+}
+#tooltip span {
+	display: block;
+	padding: 0 0.6em 0.4em;
+	font-size: 19px;
+}
