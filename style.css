@@ -39,6 +39,7 @@ body {
 #class {
 	/*margin-top: -10px;*/
 	margin-left: 10px;
+	text-transform: uppercase;
 }
 #class-desc {
 	clear: both;

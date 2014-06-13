@@ -8,26 +8,27 @@ function mouseXY() {
 window.onload=mouseXY;
  
 function SkillCtrl($scope) {
+	$scope.all_classes = classes;
+	$scope.setClass = function(cls) {
+		$scope.current_class = cls;
+		$scope.stats = $scope.current_class.stats;
+		$scope.buffs = {
+			armor: 0,
+			recovery: 0,
+			agility: 0
+		};
+		$scope.debuffs = {
+			armor: 0,
+			recovery: 0,
+			agility: 0
+		}
+	};
+	$scope.setClass(classes[0]);
 	$scope.tooltip = {
 		name: '',
 		description: '',
 		binding: ''
 	};
-	$scope.stats = {
-		armor: 40,
-		recovery: 10,
-		agility: 10,
-	};
-	$scope.buffs = {
-		armor: 0,
-		recovery: 0,
-		agility: 0
-	};
-	$scope.debuffs = {
-		armor: 0,
-		recovery: 0,
-		agility: 0
-	}
 	$scope.showSkill = function(i1, i2) {
 		var skill = $scope.current_class.skills[i1][i2];
 		if (!skill.empty)
@@ -79,10 +80,5 @@ function SkillCtrl($scope) {
 	};
 	$scope.calcLeft = function(width) {
 		return width + 3;
-	};
-	$scope.all_classes = classes;
-	$scope.current_class = classes[0];
-	$scope.setClass = function(cls) {
-		$scope.current_class = cls;
 	};
 };
