@@ -3,6 +3,7 @@
 	padding: 0;
 }
 body {
+	background: -moz-radial-gradient(circle, #9EA792, #223539);
 	background: -webkit-radial-gradient(circle, #9EA792, #223539);
 	color: white;
 	position: relative;
@@ -38,6 +39,7 @@ body {
 #class {
 	/*margin-top: -10px;*/
 	margin-left: 10px;
+	text-transform: uppercase;
 }
 #class-desc {
 	clear: both;
@@ -159,6 +161,7 @@ section {
 }
 .skill:not(.active):hover {
 	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
 }
 @keyframes pulse {
 	0% { box-shadow: 0 0 14px rgba(255,255,255,1);}
@@ -176,6 +179,8 @@ section {
 }
 .skill.active {
 	background: #43904A;
+	/*border: 6px solid #4E89B6;*/
+	/*background: #4E89B6;*/
 }
 .empty {
 	width: 100px;

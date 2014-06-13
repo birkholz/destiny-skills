@@ -12,13 +12,13 @@
 			<span ng-repeat="class in all_classes" ng-click="setClass(class)">{{class.name}}</span>
 		</div>
 		<div>
-			<img class="float-left" src="striker.png">
+			<img class="float-left" ng-src="{{current_class.image}}">
 			<div id="class" class="float-left">
 				<h1>{{current_class.subclass}}</h1>
 				<h2>{{current_class.name}} SUBCLASS</h2>
 			</div>
 		</div>
-		<p id='class-desc'>At close quarters a fist is better than any gun.</p>
+		<p id='class-desc'>{{current_class.description}}</p>
 		<div id="stats">
 			<div>
 				<span>Armor</span>
