@@ -12,7 +12,7 @@
 			<span ng-repeat="class in all_classes" ng-click="setClass(class)">{{class.name}}</span>
 		</div>
 		<div>
-			<img class="float-left" ng-src="{{current_class.image}}">
+			<img class="float-left" id="classImage" ng-src="{{current_class.image}}">
 			<div id="class" class="float-left">
 				<h1>{{current_class.subclass}}</h1>
 				<h2>{{current_class.name}} SUBCLASS</h2>
@@ -59,9 +59,12 @@
 		</div>
 	</div>
 	<div id="tooltip" ng-hide="tooltip.name==''">
-		<h3>{{tooltip.name}}</h3>
-		<p>{{tooltip.description}}</p>
-		<span>{{tooltip.binding}}</span>
+		<div class="itemHeader">
+			<div class="itemName">{{tooltip.name}}</div>
+		</div>
+		<div class="itemBody">
+			<div class="itemDescription">{{tooltip.description}}</div>
+		</div>
 	</div>
 </body>
 </html>

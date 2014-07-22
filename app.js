@@ -23,7 +23,7 @@ function SkillCtrl($scope) {
 			agility: 0
 		}
 	};
-	$scope.setClass(classes[0]);
+	$scope.setClass(classes[2]);
 	$scope.tooltip = {
 		name: '',
 		description: '',
@@ -53,8 +53,14 @@ function SkillCtrl($scope) {
 			agility: 0
 		};
 	};
-	$scope.toggleSkill = function(i1, i2) {
-		var skill = $scope.current_class.skills[i1][i2];
+	$scope.toggleSkill = function(row, col) {
+		var skill = $scope.current_class.skills[row][col];
+		if (col==8) {
+			skill.active = !skill.active;
+			return true;
+		}
+		else if ($scope.current_class.skills[1][8].active) return true;
+		
 		if (skill.active && skill.buffs) {
 			if (skill.buffs) {
 				$scope.stats.armor -= skill.buffs.armor;
@@ -71,7 +77,14 @@ function SkillCtrl($scope) {
 			$scope.buffs = {armor:0,recovery:0,agility:0};
 			$scope.debuffs = skill.buffs;
 		}
-		skill.active = !skill.active;
+		if (col!=1&&col!=2&&col!=3) {
+			$scope.current_class.skills[0][col].active = false;
+		}
+		$scope.current_class.skills[1][col].active = false;
+		$scope.current_class.skills[2][col].active = false;
+		if ($scope.current_class.skills[3][col])
+			$scope.current_class.skills[3][col].active = false;
+		$scope.current_class.skills[row][col].active = true;
 	}
 	$scope.getImagePath = function(i1, i2) {
 		var skill = $scope.current_class.skills[i1][i2];

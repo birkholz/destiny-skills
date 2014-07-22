@@ -5,6 +5,7 @@
 body {
 	background: -moz-radial-gradient(circle, #9EA792, #223539);
 	background: -webkit-radial-gradient(circle, #9EA792, #223539);
+	background: url(gradient_green.jpg) no-repeat;
 	color: white;
 	position: relative;
 	padding-top: 40px;
@@ -39,27 +40,32 @@ body {
 #class {
 	/*margin-top: -10px;*/
 	margin-left: 10px;
-	text-transform: uppercase;
+}
+#classImage {
+	border: 4px solid #DDD;
+	width: 82px;
+	height: 82px;
 }
 #class-desc {
 	clear: both;
 	display: block;
 	padding-top: 20px;
-	color: rgba(255,255,255,0.7);
 }
 h1 {
+	margin-top: 6px;
 	font-size: 2.4em;
+	font-weight: normal;
 }
 h2 {
-	line-height: 1em;
+	line-height: 1.5em;
 	font-weight: normal;
 	font-size: 1.3em;
-	color: rgba(255,255,255,0.7);
+	text-transform: uppercase;
 }
 #stats {
 	width: 875px;
-	border-top:  3px solid rgba(255,255,255,0.4);
-	border-bottom:  3px solid rgba(255,255,255,0.4);
+	border-top:  4px solid rgba(245,245,245,0.25);
+	border-bottom:  4px solid rgba(245,245,245,0.25);
 	padding: 10px 0;
 	margin: 30px 0 10px;
 	font-size: 20px;
@@ -141,23 +147,27 @@ section {
 .skill {
 	width: 88px;
 	height: 88px;
-	background: rgba(255,255,255,0.2);
-	border-radius: 50px;
-	border: 6px solid #43904A;
+	background: rgba(255,255,255,0.1);
+	border-radius: 50%;
+	border: 6px solid #5EA16A;
 	margin: 5px;
 	float: left;
 	overflow: hidden;
+	position: relative;
 }
 .skill img {
-	width: 100%;
-	height: 100%;
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 80%;
+	height: 80%;
 }
 .skill:not(.empty) {
-	transition: all 0.10s linear;
+	transition: webkit-transform 0.10s linear;
 	cursor: pointer;
 }
 .skill:not(.active) img {
-	opacity: 0.3;
+	/*opacity: 0.3;*/
 }
 .skill:not(.active):hover {
 	-webkit-transform: scale(1.05);
@@ -178,9 +188,8 @@ section {
 	animation: pulse 3s infinite ease-in-out;
 }
 .skill.active {
-	background: #43904A;
-	/*border: 6px solid #4E89B6;*/
-	/*background: #4E89B6;*/
+	background: #4887ba;
+	border-color: #4887ba;
 }
 .empty {
 	width: 100px;
@@ -191,26 +200,27 @@ section {
 }
 #tooltip {
 	width: 400px;
-	background: #1B1D1B;
-	background: rgba(30,30,30,0.95);
 	position: absolute;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
-#tooltip h3 {
+#tooltip .itemName {
 	display: block;
 	text-transform: uppercase;
-	font-size: 24px;
+	font-size: 22px;
+	padding: 10px;
 	line-height: 40px;
-	padding: 0 0.6em;
-	background: #0B0C0B;
-	border-top: 3px solid #989D9A;
+	background: rgba(195,188,180,0.9);
+	color: #000;
+	font-weight: bold;
 }
-#tooltip p {
+#tooltip .itemBody {
+	background: rgba(0,0,0,0.9);
+	padding: 10px;
+}
+#tooltip .itemDescription {
 	padding: 0.6em;
-	font-size: 18px;
-	color: #AAA;
-}
-#tooltip span {
-	display: block;
-	padding: 0 0.6em 0.4em;
-	font-size: 19px;
+	font-size: 16px;
+	color: #f5f5f5;
+	font-style: italic;
+	margin: 14px 48px;
 }

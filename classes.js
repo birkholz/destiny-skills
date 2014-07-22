@@ -354,37 +354,45 @@ var classes = [
 					description: 'A grenade which creates a Vortex which\ncontinually damages enemies trapped inside.',
 					binding: 'Binds to L1',
 					active: true,
+					image: 'voidwalker/vortex_grenade.png'
 				},
 				{
 					name: 'Glide',
 					description: 'Jump and press X again while in the air\nto activate Glide.',
 					binding: 'Binds to X',
 					active: true,
+					image: 'voidwalker/glide.png'
 				},
 				{
 					name: 'Nova Bomb',
 					description: 'Hurl an explosive bolt of Void Light at the\nenemy, disintegrating those caught within its blast.',
-					binding: 'Binds to L1 + R1'
+					binding: 'Binds to L1 + R1',
+					image: 'voidwalker/nova_bomb.png'
 				},
 				{
 					name: 'Energy Drain',
-					description: 'A powerful melee attack which drains energy\nfrom enemies and uses it to reduce the\ncooldown of your grenade.'
+					description: 'A powerful melee attack which drains energy\nfrom enemies and uses it to reduce the\ncooldown of your grenade.',
+					image: 'voidwalker/energy_drain.png'
 				},
 				{
 					name: 'Arcane Wisdom',
-					description: 'Training focused on battle recovery and speed.'
+					description: 'Training focused on battle recovery and speed.',
+					image: 'voidwalker/arcane_stats.png'
 				},
 				{
 					name: 'Vortex Mastery',
-					description: 'Increases the range of Axion Bolt seekers and\nthe duration of the Vortex effect of Nova Bomb\nand Vortex Grenade.'
+					description: 'Increases the range of Axion Bolt seekers and\nthe duration of the Vortex effect of Nova Bomb\nand Vortex Grenade.',
+					image: 'voidwalker/vortex_mastery.png'
 				},
 				{
 					name: 'Ancestral Order',
-					description: 'Training focused on all attributes.'
+					description: 'Training focused on all attributes.',
+					image: 'voidwalker/order_stats.png'
 				},
 				{
 					name: 'Angry Magic',
-					description: 'Nova Bomb tracks enemies.'
+					description: 'Nova Bomb tracks enemies.',
+					image: 'voidwalker/angry_magic.png'
 				}
 			],
 			// Row 2
@@ -392,39 +400,48 @@ var classes = [
 				{
 					name: 'Scatter Grenade',
 					description: 'A grenade that splits into many submunitions\nand covers a large area with explosions.',
-					binding: 'Binds to L1'
+					binding: 'Binds to L1',
+					image: 'voidwalker/scatter_grenade.png'
 				},
 				{
 					name: 'Focused Control',
-					description: 'Upgrades Glide for better directional control\nwhile in the air.'
+					description: 'Upgrades Glide for better directional control\nwhile in the air.',
+					image: 'voidwalker/focused_control.png'
 				},
 				{
-					name: 'Votex',
-					description: 'Nova Bomb creates a Vortex which continually\ndamages enemies trapped inside.'
+					name: 'Vortex',
+					description: 'Nova Bomb creates a Vortex which continually\ndamages enemies trapped inside.',
+					image: 'voidwalker/vortex.png'
 				},
 				{
 					name: 'Surge',
-					description: 'Killing an enemy with Energy Drain increases\nmovement speed for a short time.'
+					description: 'Killing an enemy with Energy Drain increases\nmovement speed for a short time.',
+					image: 'voidwalker/surge.png'
 				},
 				{
 					name: 'Arcane Spirit',
-					description: 'Training focused on battle recovery and\ntoughness.'
+					description: 'Training focused on battle recovery and\ntoughness.',
+					image: 'voidwalker/arcane_stats.png'
 				},
 				{
 					name: 'Bent Gravity',
-					description: 'Increases the range of grenades and Nova\nBomb.'
+					description: 'Increases the range of grenades and Nova\nBomb.',
+					image: 'voidwalker/bent_gravity.png'
 				},
 				{
 					name: 'Chaos Order',
-					description: 'Training focused on raw speed.'
+					description: 'Training focused on raw speed.',
+					image: 'voidwalker/order_stats.png'
 				},
 				{
 					name: 'Embrace the Void',
-					description: 'Damaging enemies with Nova Bomb or any\ngrenade triggers the Energy Drain effect.'
+					description: 'Damaging enemies with Nova Bomb or any\ngrenade triggers the Energy Drain effect.',
+					image: 'voidwalker/embrace_the_void.png'
 				},
 				{
 					name: 'Illumination',
-					description: 'Seal this Subclass, locking previous choices.'
+					description: 'Seal this Subclass, locking previous choices.',
+					image: 'voidwalker/illumination.png'
 				}
 			],
 			// Row 3
@@ -432,35 +449,44 @@ var classes = [
 				{
 					name: 'Axion Bolt',
 					description: 'A bolt of Void Light which forks into smaller\nbolts on impact which seek toward enemies.',
-					binding: 'Binds to L1'
+					binding: 'Binds to L1',
+					image: 'voidwalker/axion_bolt.png',
+					column_unique: true
 				},
 				{
 					name: 'Focused Burst',
-					description: 'Upgrades Glide to provide an initial boost of\nspeed.'
+					description: 'Upgrades Glide to provide an initial boost of\nspeed.',
+					image: 'voidwalker/focused_burst.png'
 				},
 				{
 					name: 'Shatter',
-					description: 'Nova Bomb splits into three projectiles.'
+					description: 'Nova Bomb splits into three projectiles.',
+					image: 'voidwalker/shatter.png'
 				},
 				{
 					name: 'Life Steal',
-					description: 'Killing an enemy with Energy Drain\nimmediately restores a significant portion of\nyour health.'
+					description: 'Killing an enemy with Energy Drain\nimmediately restores a significant portion of\nyour health.',
+					image: 'voidwalker/life_steal.png'
 				},
 				{
 					name: 'Arcane Force',
-					description: 'Training focused on toughness and speed.'
+					description: 'Training focused on toughness and speed.',
+					image: 'voidwalker/arcane_stats.png'
 				},
 				{
 					name: 'The Hunger',
-					description: 'Increases the duration of the Energy Drain\neffect.'
+					description: 'Increases the duration of the Energy Drain\neffect.',
+					image: 'voidwalker/the_hunger.png'
 				},
 				{
 					name: 'Divine Order',
-					description: 'Training focused on toughness at all costs.'
+					description: 'Training focused on toughness at all costs.',
+					image: 'voidwalker/order_stats.png'
 				},
 				{
 					name: 'Bloom',
-					description: 'Enemies killed by any of your abilities explode.'
+					description: 'Enemies killed by any of your abilities explode.',
+					image: 'voidwalker/bloom.png'
 				}
 			],
 			// Row 4
@@ -469,15 +495,18 @@ var classes = [
 				{
 					name: 'Blink',
 					description: 'A short distance teleport which replaces Glide.',
-					binding: 'Binds to L1'
+					binding: 'Binds to L1',
+					image: 'voidwalker/blink.png'
 				},
 				{
 					name: 'Lance',
-					description: 'Nova Bomb travels farther and faster.'
+					description: 'Nova Bomb travels farther and faster.',
+					image: 'voidwalker/lance.png'
 				},
 				{
 					name: 'Soul Rip',
-					description: 'Killing an enemy with Energy Drain reduces\nthe cooldown of Nova Bomb.'
+					description: 'Killing an enemy with Energy Drain reduces\nthe cooldown of Nova Bomb.',
+					image: 'voidwalker/soul_rip.png'
 				}
 			]
 		]
