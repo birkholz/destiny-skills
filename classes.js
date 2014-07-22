@@ -234,38 +234,45 @@ var classes = [
 					description: 'An explosive grenade that catches enemies on\nfire, causing additional damage over time.',
 					binding: 'Binds to L1',
 					active: true,
-					image: 'grenade.png'
+					image: 'gunslinger/incendiary_grenade.png'
 				},
 				{
 					name: 'Double Jump',
 					description: 'Jump a second time after leaving the ground.',
 					binding: 'Binds to X',
-					active: true
+					active: true,
+					image: 'gunslinger/double_jump.png'
 				},
 				{
 					name: 'Golden Gun',
 					description: 'Summon a flaming pistol which disintegrates\nenemies with Solar Light.',
-					binding: 'Binds to L1 + R1'
+					binding: 'Binds to L1 + R1',
+					image: 'gunslinger/golden_gun.png'
 				},
 				{
 					name: 'Throwing Knife',
-					description: 'Throw a knife from a distance.'
+					description: 'Throw a knife from a distance.',
+					image: 'gunslinger/throwing_knife.png'
 				},
 				{
 					name: 'Path Forgotten',
-					description: 'Training focused on toughness and speed.'
+					description: 'Training focused on toughness and speed.',
+					image: 'gunslinger/path_stats.png'
 				},
 				{
 					name: 'Scavenger',
-					description: 'Picking up ammo reduces the cooldown of\nyour grenade and Throwing Knife.'
+					description: 'Picking up ammo reduces the cooldown of\nyour grenade and Throwing Knife.',
+					image: 'gunslinger/scavenger.png'
 				},
 				{
 					name: 'Way of the Drifter',
-					description: 'Training focused on all attributes.'
+					description: 'Training focused on all attributes.',
+					image: 'gunslinger/way_stats.png'
 				},
 				{
 					name: 'Chain of Woe',
-					description: 'Precision kills increase weapon reload speed.\nStacks up to 3 times.'
+					description: 'Precision kills increase weapon reload speed.\nStacks up to 3 times.',
+					image: 'gunslinger/chain_of_woe.png'
 				}
 
 			],
@@ -274,39 +281,48 @@ var classes = [
 				{
 					name: 'Swarm Grenade',
 					description: 'A grenade which detonates on impact,\nreleasing multiple drones that seek nearby\nenemies.',
-					binding: 'Binds to L1'
+					binding: 'Binds to L1',
+					image: 'gunslinger/swarm_grenade.png'
 				},
 				{
 					name: 'Better Control',
-					description: 'Upgrades Double Jump for better directional\ncontrol while in the air.'
+					description: 'Upgrades Double Jump for better directional\ncontrol while in the air.',
+					image: 'gunslinger/better_control.png'
 				},
 				{
 					name: 'Deadeye',
-					description: 'Significantly increases the accuracy of Golden\nGun.'
+					description: 'Significantly increases the accuracy of Golden\nGun.',
+					image: 'gunslinger/deadeye.png'
 				},
 				{
 					name: 'Circle of Life',
-					description: 'Killing an enemy with Throwing Knife while\nGoden Gun is active extends the duration of\nGolden Gun.'
+					description: 'Killing an enemy with Throwing Knife while\nGoden Gun is active extends the duration of\nGolden Gun.',
+					image: 'gunslinger/circle_of_life.png'
 				},
 				{
 					name: 'Path Forbidden',
-					description: 'Training focused on battle recovery and speed.'
+					description: 'Training focused on battle recovery and speed.',
+					image: 'gunslinger/path_stats.png'
 				},
 				{
 					name: 'Keyhole',
-					description: 'Golden Gun overpenetrates and can damage\nmultiple targets.'
+					description: 'Golden Gun overpenetrates and can damage\nmultiple targets.',
+					image: 'gunslinger/keyhole.png'
 				},
 				{
 					name: 'Way of the Fearless',
-					description: 'Training focused on toughness at all costs.'
+					description: 'Training focused on toughness at all costs.',
+					image: 'gunslinger/way_stats.png'
 				},
 				{
 					name: 'Over the Horizon',
-					description: 'Increases the range of Golden Gun.'
+					description: 'Increases the range of Golden Gun.',
+					image: 'gunslinger/over_the_horizon.png'
 				},
 				{
 					name: 'Illumination',
-					description: 'Seal this Subclass, locking previous choices.'
+					description: 'Seal this Subclass, locking previous choices.',
+					image: 'illumination.png'
 				}
 			],
 			// Row 3
@@ -314,35 +330,43 @@ var classes = [
 				{
 					name: 'Tripmine Grenade',
 					description: 'An explosive grenade that sticks to surfaces\nand detonates when enemies pass through its\nlaser trigger.',
-					binding: 'Binds to L1'
+					binding: 'Binds to L1',
+					image: 'gunslinger/tripmine_grenade.png'
 				},
 				{
 					name: 'Triple Jump',
-					description: 'Upgrades Double Jump with a third jump.'
+					description: 'Upgrades Double Jump with a third jump.',
+					image: 'gunslinger/triple_jump.png'
 				},
 				{
 					name: 'Combustion',
-					description: 'Killing enemies with Golden Gun causes them\nto explode.'
+					description: 'Killing enemies with Golden Gun causes them\nto explode.',
+					image: 'gunslinger/combustion.png'
 				},
 				{
 					name: 'Incendiary Blade',
-					description: 'Throwing Knife catches enemies on fire,\ndealing additional damage over time.'
+					description: 'Throwing Knife catches enemies on fire,\ndealing additional damage over time.',
+					image: 'gunslinger/incendiary_blade.png'
 				},
 				{
 					name: 'Path Unknown',
-					description: 'Training focused on battle recovery and toughness.'
+					description: 'Training focused on battle recovery and toughness.',
+					image: 'gunslinger/path_stats.png'
 				},
 				{
 					name: 'Gunslinger\'s Trance',
-					description: 'Precision kills increase weapon stability.\nStacks up to 3 times.'
+					description: 'Precision kills increase weapon stability.\nStacks up to 3 times.',
+					image: 'gunslinger/gunslingers_trance.png'
 				},
 				{
 					name: 'Way of the Nomad',
-					description: 'Training focused on maximum battle recovery.'
+					description: 'Training focused on maximum battle recovery.',
+					image: 'gunslinger/way_stats.png'
 				},
 				{
 					name: 'Gambler\'s Dagger',
-					description: 'Gain an additional Throwing Knife.'
+					description: 'Gain an additional Throwing Knife.',
+					image: 'gunslinger/gamblers_dagger.png'
 				}
 			],
 			// Row 4
@@ -350,15 +374,18 @@ var classes = [
 				{empty:true},
 				{
 					name: 'Higher Jump',
-					description: 'Upgrades Double Jump for even greater\nheight.'
+					description: 'Upgrades Double Jump for even greater\nheight.',
+					image: 'gunslinger/higher_jump.png'
 				},
 				{
 					name: 'Gunfighter',
 					description: 'Reduces the cooldown of Golden Gun,\nallowing it to be used more often.',
+					image: 'gunslinger/gunfighter.png'
 				},
 				{
 					name: 'Knife Juggler',
-					description: 'Precision kills with Throwing Knife\nimmediately reset its cooldown.'
+					description: 'Precision kills with Throwing Knife\nimmediately reset its cooldown.',
+					image: 'gunslinger/knife_juggler.png'
 				}
 			]
 		]
