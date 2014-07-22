@@ -17,22 +17,25 @@ var classes = [
 					description: 'An explosive grenade that disorients the\nenemies it damages.',
 					binding: 'Binds to L1',
 					active: true,
-					image: 'grenade.png'
+					image: 'striker/flashbang_grenade.png'
 				},
 				{
 					name: 'Lift',
 					description: 'Jump and then press X again while in the air\n to activate Lift.',
 					binding: 'Binds to X',
-					active: true
+					active: true,
+					image: 'striker/lift.png'
 				},
 				{
 					name: 'Fist of Havoc',
 					description: 'Smash the ground and dissolve nearby\nenemies in a maelstrom of Arc Light.',
-					binding: 'Binds to L1 + R1'
+					binding: 'Binds to L1 + R1',
+					image: 'striker/fist_of_havoc.png'
 				},
 				{
 					name: 'Storm Fist',
-					description: 'A punishing melee attack that deals bonus\ndamage.'
+					description: 'A punishing melee attack that deals bonus\ndamage.',
+					image: 'striker/storm_fist.png'
 				},
 				{
 					name: 'Titan Codex I',
@@ -41,7 +44,8 @@ var classes = [
 						armor: 10,
 						recovery: 20,
 						agility: 0
-					}
+					},
+					image: 'striker/codex1.png'
 				},
 				{
 					name: 'Headstrong',
@@ -50,7 +54,8 @@ var classes = [
 						armor: 0,
 						recovery: 0,
 						agility: 10
-					}
+					},
+					image: 'striker/headstrong.png'
 				},
 				{
 					name: 'Titan Codex IV',
@@ -59,7 +64,8 @@ var classes = [
 						armor: 10,
 						recovery: 20,
 						agility: 10
-					}
+					},
+					image: 'striker/codex2.png'
 				},
 				{
 					name: 'Unstoppable',
@@ -68,7 +74,8 @@ var classes = [
 						armor: 10,
 						recovery: 0,
 						agility: 0
-					}
+					},
+					image: 'striker/unstoppable.png'
 				}
 			],
 			// Row 2
@@ -76,19 +83,23 @@ var classes = [
 				{
 					name: 'Pulse Grenade',
 					description: 'A grenade that periodically damages enemies\ninside its explosion radius',
-					binding: 'Binds to L1'
+					binding: 'Binds to L1',
+					image: 'striker/pulse_grenade.png'
 				},
 				{
 					name: 'Increased Height',
 					description: 'Upgrades Lift to travel to greater heights',
+					image: 'striker/increased_height.png'
 				},
 				{
 					name: 'Aftermath',
-					description: 'Fist of Havoc leaves a damage-dealing field in\nits wake.'
+					description: 'Fist of Havoc leaves a damage-dealing field in\nits wake.',
+					image: 'striker/aftermath.png'
 				},
 				{
 					name: 'Overload',
-					description: 'Hits with Storm Fist have a chance to\nimmediately reset its cooldown.'
+					description: 'Hits with Storm Fist have a chance to\nimmediately reset its cooldown.',
+					image: 'striker/overload.png'
 				},
 				{
 					name: 'Titan Codex II',
@@ -97,11 +108,13 @@ var classes = [
 						armor: 10,
 						recovery: 0,
 						agility: 20
-					}
+					},
+					image: 'striker/codex1.png'
 				},
 				{
 					name: 'Aftermath',
-					description: 'Increases the duration of Pulse Grenade,\nShock Grenade, and Aftermath.'
+					description: 'Increases the duration of Pulse Grenade,\nShock Grenade, and Aftermath.',
+					image: 'striker/aftermath.png'
 				},
 				{
 					name: 'Titan Codex V',
@@ -110,11 +123,13 @@ var classes = [
 						armor: 0,
 						recovery: 50,
 						agility: 0
-					}
+					},
+					image: 'striker/codex2.png'
 				},
 				{
 					name: 'Shoulder Charge',
-					description: 'After sprinting for a short time, press R1 to\n unleash a devastating melee attack.'
+					description: 'After sprinting for a short time, press R1 to\n unleash a devastating melee attack.',
+					image: 'striker/shoulder_charge.png'
 				},
 				{
 					name: 'Illumination',
@@ -123,7 +138,8 @@ var classes = [
 						armor: 10,
 						recovery: 0,
 						agility: 0
-					}
+					},
+					image: 'illumination.png'
 				}
 			],
 			// Row 3
@@ -131,19 +147,23 @@ var classes = [
 				{
 					name: 'Lightning Grenade',
 					description: 'A grenade that sticks to any surface \nperiodically emitting bolts of lightning.',
-					binding: 'Binds to L1'
+					binding: 'Binds to L1',
+					image: 'striker/lightning_grenade.png'
 				},
 				{
 					name: 'Increased Control',
-					description: 'Upgrades Lift for better directional control\nwhile in the air.'
+					description: 'Upgrades Lift for better directional control\nwhile in the air.',
+					image: 'striker/increased_control.png'
 				},
 				{
 					name: 'Death From Above',
-					description: 'After jumping, Fist of Havoc can be aimed at\nenemies below'
+					description: 'After jumping, Fist of Havoc can be aimed at\nenemies below',
+					image: 'striker/death_from_above.png'
 				},
 				{
 					name: 'Discharge',
-					description: 'Hits with Storm Fist have achance to deal area\nof effect damage around the target.'
+					description: 'Hits with Storm Fist have achance to deal area\nof effect damage around the target.',
+					image: 'striker/discharge.png'
 				},
 				{
 					name: 'Titan Codex III',
@@ -152,11 +172,13 @@ var classes = [
 						armor: 0,
 						recovery: 20,
 						agility: 20
-					}
+					},
+					image: 'striker/codex1.png'
 				},
 				{
 					name: 'Transfusion',
-					description: 'Kills with melee attacks immediately trigger\nhealth regeneration.'
+					description: 'Kills with melee attacks immediately trigger\nhealth regeneration.',
+					image: 'striker/transfusion.png'
 				},
 				{
 					name: 'Titan Codex VI',
@@ -165,11 +187,13 @@ var classes = [
 						armor: 10,
 						recovery: 0,
 						agility: 30
-					}
+					},
+					image: 'striker/codex2.png'
 				},
 				{
 					name: 'Juggernaut',
-					description: 'After sprinting for a short time, gain a\nprotective shield.'
+					description: 'After sprinting for a short time, gain a\nprotective shield.',
+					image: 'striker/juggernaut.png'
 				}
 			],
 			// Row 4
@@ -177,15 +201,18 @@ var classes = [
 				{empty:true},
 				{
 					name: 'Catapult',
-					description: 'Upgrades Lift to provide a strong initial burst\nof momentum'
+					description: 'Upgrades Lift to provide a strong initial burst\nof momentum',
+					image: 'striker/catapult.png'
 				},
 				{
 					name: 'Shockwave',
-					description: 'Fist of Havoc unleashes a wave of devastating\nenergy which travels along the ground.'
+					description: 'Fist of Havoc unleashes a wave of devastating\nenergy which travels along the ground.',
+					image: 'striker/shockwave.png'
 				},
 				{
 					name: 'Illuminated',
-					description: 'Kills with Storm Fist significantly reduce the\ncooldown of Fist of Havoc'
+					description: 'Kills with Storm Fist significantly reduce the\ncooldown of Fist of Havoc',
+					image: 'striker/illuminated.png'
 				}
 			]
 		]},
@@ -441,7 +468,7 @@ var classes = [
 				{
 					name: 'Illumination',
 					description: 'Seal this Subclass, locking previous choices.',
-					image: 'voidwalker/illumination.png'
+					image: 'illumination.png'
 				}
 			],
 			// Row 3

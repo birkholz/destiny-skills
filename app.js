@@ -17,13 +17,8 @@ function SkillCtrl($scope) {
 			recovery: 0,
 			agility: 0
 		};
-		$scope.debuffs = {
-			armor: 0,
-			recovery: 0,
-			agility: 0
-		}
 	};
-	$scope.setClass(classes[2]);
+	$scope.setClass(classes[0]);
 	$scope.tooltip = {
 		name: '',
 		description: '',
@@ -34,10 +29,7 @@ function SkillCtrl($scope) {
 		if (!skill.empty)
 			$scope.tooltip = skill;
 		if (!skill.active && skill.buffs) {
-			$scope.buffs = skill.buffs;
-		}
-		else if (skill.active && skill.buffs) {
-			$scope.debuffs = skill.buffs;
+			// $scope.buffs = skill.buffs;
 		}
 	};
 	$scope.clearTooltip = function() {
@@ -47,12 +39,16 @@ function SkillCtrl($scope) {
 			recovery: 0,
 			agility: 0
 		};
-		$scope.debuffs = {
-			armor: 0,
-			recovery: 0,
-			agility: 0
-		};
 	};
+
+	deactivateBuffs = function(skill) {
+		if (skill.active && skill.buffs) {
+			$scope.stats.armor -= skill.buffs.armor;
+			$scope.stats.recovery -= skill.buffs.recovery;
+			$scope.stats.agility -= skill.buffs.agility;
+		}
+	}
+
 	$scope.toggleSkill = function(row, col) {
 		var skill = $scope.current_class.skills[row][col];
 		if (col==8) {
@@ -61,29 +57,20 @@ function SkillCtrl($scope) {
 		}
 		else if ($scope.current_class.skills[1][8].active) return true;
 		
-		if (skill.active && skill.buffs) {
-			if (skill.buffs) {
-				$scope.stats.armor -= skill.buffs.armor;
-				$scope.stats.recovery -= skill.buffs.recovery;
-				$scope.stats.agility -= skill.buffs.agility;
-				$scope.buffs = skill.buffs;
-				$scope.debuffs = {armor: 0,recovery: 0,agility: 0};
+		for (var ii=0;ii<3;ii++) {
+			if (ii != row && $scope.current_class.skills[ii][col]) {
+				deactivateBuffs($scope.current_class.skills[ii][col]);
+				if (ii==0&&col!=1&&col!=2&&col!=3||ii!=0)
+					$scope.current_class.skills[ii][col].active = false;
 			}
 		}
-		else if (skill.buffs) {
+
+		if (!skill.active && skill.buffs) {
 			$scope.stats.armor += skill.buffs.armor;
 			$scope.stats.recovery += skill.buffs.recovery;
 			$scope.stats.agility += skill.buffs.agility;
-			$scope.buffs = {armor:0,recovery:0,agility:0};
-			$scope.debuffs = skill.buffs;
+			$scope.buffs = {armor: 0, recovery: 0, agility: 0};
 		}
-		if (col!=1&&col!=2&&col!=3) {
-			$scope.current_class.skills[0][col].active = false;
-		}
-		$scope.current_class.skills[1][col].active = false;
-		$scope.current_class.skills[2][col].active = false;
-		if ($scope.current_class.skills[3][col])
-			$scope.current_class.skills[3][col].active = false;
 		$scope.current_class.skills[row][col].active = true;
 	}
 	$scope.getImagePath = function(i1, i2) {
