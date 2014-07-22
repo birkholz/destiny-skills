@@ -2,8 +2,8 @@ function mouseXY() {
 	var X = event.clientX;
 	var Y = event.clientY;
 	 
-	document.getElementById("tooltip").style.top= Y - document.getElementById("tooltip").clientHeight;
-	document.getElementById("tooltip").style.left=X + 20;
+	document.getElementById("tooltip").style.top= Y - document.getElementById("tooltip").clientHeight - 10;
+	document.getElementById("tooltip").style.left=X + 30;
 }
 window.onload=mouseXY;
  

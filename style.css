@@ -16,10 +16,10 @@ body {
 	float: left;
 }
 #wrapper {
-	width: 990px;
+	width: 760px;
 	position: absolute;
 	left: 50%;
-	margin-left: -495px;
+	margin-left: -380px;
 }
 #class-list {
 	text-align: center;
@@ -63,7 +63,7 @@ h2 {
 	text-transform: uppercase;
 }
 #stats {
-	width: 875px;
+	width: 670px;
 	border-top:  4px solid rgba(245,245,245,0.25);
 	border-bottom:  4px solid rgba(245,245,245,0.25);
 	padding: 10px 0;
@@ -145,8 +145,8 @@ section {
 	clear: both;
 }
 .skill {
-	width: 88px;
-	height: 88px;
+	width: 62px;
+	height: 62px;
 	background: rgba(255,255,255,0.1);
 	border-radius: 50%;
 	border: 6px solid #5EA16A;
@@ -163,11 +163,8 @@ section {
 	height: 80%;
 }
 .skill:not(.empty) {
-	transition: webkit-transform 0.10s linear;
+	transition: all 0.10s linear;
 	cursor: pointer;
-}
-.skill:not(.active) img {
-	/*opacity: 0.3;*/
 }
 .skill:not(.active):hover {
 	-webkit-transform: scale(1.05);
@@ -199,7 +196,7 @@ section {
 	border: none;
 }
 #tooltip {
-	width: 400px;
+	width: 350px;
 	position: absolute;
 	box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -208,9 +205,9 @@ section {
 	text-transform: uppercase;
 	font-size: 22px;
 	padding: 10px;
-	line-height: 40px;
+	line-height: 24px;
 	background: rgba(195,188,180,0.9);
-	color: #000;
+	color: rgb(26, 30, 36);
 	font-weight: bold;
 }
 #tooltip .itemBody {
@@ -221,6 +218,7 @@ section {
 	padding: 0.6em;
 	font-size: 16px;
 	color: #f5f5f5;
+	opacity: 0.8;
 	font-style: italic;
-	margin: 14px 48px;
+	margin: 4px 48px 14px 48px;
 }
