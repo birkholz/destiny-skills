@@ -144,6 +144,12 @@ h2 {
 section {
 	clear: both;
 }
+#sheet.locked .skill {
+	opacity: 0.6;
+}
+#sheet section:nth-child(2) .skill:last-child, #sheet .skill.active {
+	opacity: 1;
+}
 .skill {
 	width: 62px;
 	height: 62px;

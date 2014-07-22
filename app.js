@@ -1,8 +1,9 @@
 function mouseXY() {
 	var X = event.clientX;
 	var Y = event.clientY;
-	 
-	document.getElementById("tooltip").style.top= Y - document.getElementById("tooltip").clientHeight - 10;
+	var height = document.getElementById("tooltip").clientHeight;
+	var width = document.getElementById("tooltip").clientWidth;
+	document.getElementById("tooltip").style.top= Y - height - 10;
 	document.getElementById("tooltip").style.left=X + 30;
 }
 window.onload=mouseXY;
@@ -24,6 +25,7 @@ function SkillCtrl($scope) {
 		description: '',
 		binding: ''
 	};
+	$scope.locked = false;
 	$scope.showSkill = function(i1, i2) {
 		var skill = $scope.current_class.skills[i1][i2];
 		if (!skill.empty)
@@ -53,6 +55,7 @@ function SkillCtrl($scope) {
 		var skill = $scope.current_class.skills[row][col];
 		if (col==8) {
 			skill.active = !skill.active;
+			$scope.locked = skill.active;
 			return true;
 		}
 		else if ($scope.current_class.skills[1][8].active) return true;
