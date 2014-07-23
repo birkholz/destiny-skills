@@ -138,9 +138,6 @@ h2 {
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in;
 }
-#sheet {
-
-}
 section {
 	clear: both;
 }
@@ -168,7 +165,7 @@ section {
 	width: 80%;
 	height: 80%;
 }
-.skill:not(.empty) {
+.skill:hover {
 	transition: all 0.10s linear;
 	cursor: pointer;
 }
@@ -186,7 +183,7 @@ section {
 	50% { -webkit-box-shadow: 0 0 14px rgba(255,255,255,0.5);}
 	100% { -webkit-box-shadow: 0 0 14px rgba(255,255,255,1);}
 }
-.skill:not(.empty).active:hover {
+.skill.active:hover {
 	-webkit-animation: pulse 3s infinite ease-in-out;
 	animation: pulse 3s infinite ease-in-out;
 }
@@ -194,12 +191,8 @@ section {
 	background: #4887ba;
 	border-color: #4887ba;
 }
-.empty {
-	width: 74px;
-	height: 74px;
-	margin: 5px;
-	background: none;
-	border: none;
+#sheet section:last-child {
+	margin-left: 84px;
 }
 #tooltip {
 	width: 350px;

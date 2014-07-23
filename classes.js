@@ -1,5 +1,6 @@
 var classes = [
 	{
+		index: 0,
 		name:'Titan',
 		subclass: 'Striker',
 		image: 'striker.png',
@@ -16,14 +17,12 @@ var classes = [
 					name: 'Flashbang Grenade',
 					description: 'An explosive grenade that disorients the\nenemies it damages.',
 					binding: 'Binds to L1',
-					active: true,
 					image: 'striker/flashbang_grenade.png'
 				},
 				{
 					name: 'Lift',
 					description: 'Jump and then press X again while in the air\n to activate Lift.',
 					binding: 'Binds to X',
-					active: true,
 					image: 'striker/lift.png'
 				},
 				{
@@ -198,7 +197,6 @@ var classes = [
 			],
 			// Row 4
 			[
-				{empty:true},
 				{
 					name: 'Catapult',
 					description: 'Upgrades Lift to provide a strong initial burst\nof momentum',
@@ -217,6 +215,7 @@ var classes = [
 			]
 		]},
 	{
+		index: 1,
 		name:'Hunter',
 		subclass: 'Gunslinger',
 		image: 'gunslinger.png',
@@ -233,14 +232,12 @@ var classes = [
 					name: 'Incendiary Grenade',
 					description: 'An explosive grenade that catches enemies on\nfire, causing additional damage over time.',
 					binding: 'Binds to L1',
-					active: true,
 					image: 'gunslinger/incendiary_grenade.png'
 				},
 				{
 					name: 'Double Jump',
 					description: 'Jump a second time after leaving the ground.',
 					binding: 'Binds to X',
-					active: true,
 					image: 'gunslinger/double_jump.png'
 				},
 				{
@@ -371,7 +368,6 @@ var classes = [
 			],
 			// Row 4
 			[
-				{empty:true},
 				{
 					name: 'Higher Jump',
 					description: 'Upgrades Double Jump for even greater\nheight.',
@@ -391,6 +387,7 @@ var classes = [
 		]
 	},
 	{
+		index: 2,
 		name:'Warlock',
 		subclass: 'Voidwalker',
 		image: 'voidwalker.png',
@@ -407,14 +404,12 @@ var classes = [
 					name: 'Vortex Grenade',
 					description: 'A grenade which creates a Vortex which\ncontinually damages enemies trapped inside.',
 					binding: 'Binds to L1',
-					active: true,
 					image: 'voidwalker/vortex_grenade.png'
 				},
 				{
 					name: 'Glide',
 					description: 'Jump and press X again while in the air\nto activate Glide.',
 					binding: 'Binds to X',
-					active: true,
 					image: 'voidwalker/glide.png'
 				},
 				{
@@ -545,7 +540,6 @@ var classes = [
 			],
 			// Row 4
 			[
-				{empty:true},
 				{
 					name: 'Blink',
 					description: 'A short distance teleport which replaces Glide.',

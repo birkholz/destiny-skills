@@ -1,11 +1,15 @@
-<html ng-app>
+<html ng-app="skillsApp">
 <head>
 	<title>Skill Calculator</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="bungie, destiny, skill, calculator">
+	<meta name="description" content="Create and share Destiny subclass setups.">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.20/angular.min.js"></script>
+	<script type="text/javascript" src="classes.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.11/angular.min.js"></script>
-<script type="text/javascript" src="classes.js"></script>
-<script type="text/javascript" src="app.js"></script>
-<link rel="stylesheet" type="text/css" href="style.css">
 <body onmousemove="javascript:mouseXY();" ng-controller="SkillCtrl">
 	<div id="wrapper">
 		<div id="class-list">
@@ -50,11 +54,11 @@
 				<div
 					class="skill"
 					ng-repeat="skill in row"
-					ng-class="{empty: skill.empty, active: skill.active}"
+					ng-class="{active: skill.active}"
 					ng-mouseenter="showSkill($parent.$index, $index)"
 					ng-mouseleave="clearTooltip()"
 					ng-click="toggleSkill($parent.$index, $index)">
-					<img ng-hide="skill.empty" ng-src="{{getImagePath($parent.$index, $index)}}">
+					<img ng-src="{{getImagePath($parent.$index, $index)}}">
 				</div>
 		</div>
 	</div>
